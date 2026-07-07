@@ -39,7 +39,7 @@ export default function Hero() {
             muted
             loop
             playsInline
-            preload="auto"
+            preload="metadata"
             poster="/hero-ocean-poster.jpg"
             className="h-full w-full scale-110 object-cover brightness-[0.5]"
           >
