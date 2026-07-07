@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FiFacebook, FiInstagram, FiLinkedin, FiYoutube, FiClock, FiMapPin } from 'react-icons/fi';
+import { FiFacebook, FiInstagram, FiClock, FiMapPin } from 'react-icons/fi';
 import {
   FOOTER_EXPLORE,
   FOOTER_LEGAL,
@@ -31,10 +31,8 @@ function FooterColumn({ title, links }: { title: string; links: NavLink[] }) {
 }
 
 const socials = [
-  { Icon: FiInstagram, href: SITE_CONFIG.social.instagram },
-  { Icon: FiFacebook, href: SITE_CONFIG.social.facebook },
-  { Icon: FiLinkedin, href: SITE_CONFIG.social.linkedin },
-  { Icon: FiYoutube, href: SITE_CONFIG.social.youtube },
+  { Icon: FiInstagram, href: SITE_CONFIG.social.instagram, label: 'Instagram' },
+  { Icon: FiFacebook, href: SITE_CONFIG.social.facebook, label: 'Facebook' },
 ];
 
 export default function Footer() {
@@ -52,13 +50,13 @@ export default function Footer() {
               {SITE_CONFIG.tagline}. Na Marginal da Baía de Luanda, onde a cidade encontra o mar.
             </p>
             <div className="mt-6 flex gap-3">
-              {socials.map(({ Icon, href }, i) => (
+              {socials.map(({ Icon, href, label }, i) => (
                 <a
                   key={i}
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Rede social"
+                  aria-label={label}
                   className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-mist transition-all hover:border-lagoon hover:bg-lagoon/10 hover:text-foam"
                 >
                   <Icon size={16} />

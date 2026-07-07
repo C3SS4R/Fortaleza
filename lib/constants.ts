@@ -11,17 +11,15 @@ export const SITE_CONFIG = {
   foundedYear: 2013,
   phone: '+244 945 334 434',
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP ?? '244945334434',
-  email: 'cesarelavoco360@gmail.com',
+  email: 'comercial@fortalezashopping.co.ao',
   address: 'Av. 4 de Fevereiro, S/N, Luanda, Angola',
   openingHours: 'Todos os dias · 09h00 – 22h00',
   mapsEmbed:
     process.env.NEXT_PUBLIC_GOOGLE_MAPS_EMBED ??
     'https://www.google.com/maps?q=Shopping%20Fortaleza%2C%20Av.%204%20de%20Fevereiro%2C%20Luanda&output=embed',
   social: {
-    instagram: 'https://instagram.com',
-    facebook: 'https://facebook.com',
-    linkedin: 'https://linkedin.com',
-    youtube: 'https://youtube.com',
+    instagram: 'https://www.instagram.com/shoppingfortaleza.oficial/',
+    facebook: 'https://www.facebook.com/shopping.fortaleza.oficial',
   },
 };
 
