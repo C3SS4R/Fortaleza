@@ -22,7 +22,7 @@ export default function BackToTop() {
           exit={{ opacity: 0, y: 20 }}
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           aria-label="Voltar ao topo"
-          className="fixed bottom-8 right-6 z-40 flex h-12 w-12 items-center justify-center border border-white/20 bg-abyss/80 text-foam backdrop-blur transition-colors hover:border-lagoon hover:text-lagoon lg:right-10"
+          className="liquid-glass fixed bottom-8 right-6 z-40 flex h-12 w-12 items-center justify-center rounded-full text-foam transition-colors hover:text-lagoon lg:right-10"
         >
           <FiArrowUp />
         </motion.button>

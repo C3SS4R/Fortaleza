@@ -59,7 +59,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Rede social"
-                  className="flex h-10 w-10 items-center justify-center border border-white/15 text-mist transition-all hover:border-lagoon hover:bg-lagoon/10 hover:text-foam"
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-mist transition-all hover:border-lagoon hover:bg-lagoon/10 hover:text-foam"
                 >
                   <Icon size={16} />
                 </a>
@@ -99,19 +99,9 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Aviso de projeto conceptual — obrigatorio */}
-        <div className="mt-16 rounded-none border border-sand/30 bg-sand/5 p-5">
-          <p className="text-xs leading-relaxed text-sand/90">
-            <strong className="font-semibold text-sand">Projeto conceptual.</strong> Este site é um
-            exercício de design e portfólio, sem qualquer afiliação, patrocínio ou relação oficial
-            com o Shopping Fortaleza de Luanda ou entidades associadas. Nomes de lojas, eventos,
-            imagens e dados de contacto são fictícios ou meramente ilustrativos.
-          </p>
-        </div>
-
-        <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs text-mist sm:flex-row">
+        <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs text-mist sm:flex-row">
           <p>
-            © {new Date().getFullYear()} {SITE_CONFIG.name} · Redesign conceptual.
+            © {new Date().getFullYear()} {SITE_CONFIG.name}. Todos os direitos reservados.
           </p>
           <p>Feito com maré alta em Luanda.</p>
         </div>

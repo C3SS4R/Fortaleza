@@ -67,7 +67,7 @@ export default function ContactosPage() {
                 href={whatsappHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-2 inline-flex items-center justify-center gap-3 bg-[#25D366] px-6 py-3.5 text-xs font-semibold uppercase tracking-widest2 text-white transition-transform hover:scale-[1.02]"
+                className="mt-2 inline-flex items-center justify-center gap-3 rounded-full bg-[#25D366] px-6 py-3.5 text-xs font-semibold uppercase tracking-widest2 text-white transition-transform hover:scale-[1.02]"
               >
                 <FaWhatsapp className="text-lg" /> Falar no WhatsApp
               </a>

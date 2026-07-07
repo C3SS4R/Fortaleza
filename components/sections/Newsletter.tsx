@@ -59,7 +59,7 @@ export default function Newsletter() {
                     type="email"
                     placeholder="o.seu@email.com"
                     aria-invalid={!!errors.email}
-                    className="w-full border border-white/15 bg-white/5 px-5 py-3.5 text-sm text-foam placeholder:text-mist focus:border-lagoon focus:outline-none"
+                    className="w-full rounded-xl border border-white/15 bg-white/5 px-5 py-3.5 text-sm text-foam placeholder:text-mist focus:border-lagoon focus:outline-none"
                     {...register('email')}
                   />
                   {errors.email && (

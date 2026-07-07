@@ -18,9 +18,9 @@ export default function WhatsAppButton() {
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ delay: 2, duration: 0.4 }}
-      className="fixed bottom-24 right-6 z-40 flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] text-xl text-white shadow-lg shadow-black/20 transition-transform hover:scale-110 lg:right-10"
+      className="liquid-glass liquid-glass--wa liquid-sheen fixed bottom-24 right-6 z-40 flex h-14 w-14 items-center justify-center rounded-full text-2xl text-white transition-transform duration-300 hover:scale-110 lg:right-10"
     >
-      <FaWhatsapp />
+      <FaWhatsapp className="drop-shadow-[0_1px_3px_rgba(0,30,15,0.55)]" />
     </motion.a>
   );
 }

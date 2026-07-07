@@ -2,7 +2,7 @@
   "name": "shopping-fortaleza",
   "version": "1.0.0",
   "private": true,
-  "description": "Redesign conceptual (nao-oficial, projeto de portfolio) do site institucional do Shopping Fortaleza de Luanda.",
+  "description": "Site institucional do Shopping Fortaleza de Luanda — compras, gastronomia e lazer na Baia de Luanda.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

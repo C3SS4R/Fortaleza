@@ -30,7 +30,7 @@ export default function Preloader() {
           <motion.div
             initial={{ width: 0, opacity: 0 }}
             animate={{ width: 180, opacity: 1 }}
-            transition={{ duration: 1.2, delay: 0.6, ease: [0.77, 0, 0.175, 1] }}
+            transition={{ duration: 0.9, delay: 0.5, ease: [0.77, 0, 0.175, 1] }}
             className="horizon-line mt-6"
           />
         </motion.div>

@@ -15,7 +15,7 @@ const schema = z.object({
 type FormValues = z.infer<typeof schema>;
 
 const inputClasses =
-  'w-full border border-white/15 bg-white/5 px-5 py-3.5 text-sm text-foam placeholder:text-mist focus:border-lagoon focus:outline-none';
+  'w-full rounded-xl border border-white/15 bg-white/5 px-5 py-3.5 text-sm text-foam placeholder:text-mist focus:border-lagoon focus:outline-none';
 const labelClasses = 'mb-2 block text-xs uppercase tracking-widest2 text-mist';
 
 const subjects = [

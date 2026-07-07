@@ -48,7 +48,7 @@ export default function Stores({ preview = false }: StoresProps) {
               key={cat}
               onClick={() => setActive(cat)}
               className={cn(
-                'border px-5 py-2 text-xs font-medium uppercase tracking-widest transition-all duration-300',
+                'rounded-full border px-5 py-2 text-xs font-medium uppercase tracking-widest transition-all duration-300',
                 active === cat
                   ? 'border-coral bg-coral text-abyss'
                   : 'border-white/15 text-mist hover:border-lagoon hover:text-foam',
@@ -66,10 +66,15 @@ export default function Stores({ preview = false }: StoresProps) {
               <motion.div
                 key={store.slug}
                 layout
-                initial={{ opacity: 0, scale: 0.92 }}
-                animate={{ opacity: 1, scale: 1, transition: { delay: i * 0.04 } }}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.1 }}
                 exit={{ opacity: 0, scale: 0.92 }}
-                transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+                transition={{
+                  duration: 0.5,
+                  delay: (i % 8) * 0.05,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
               >
                 <StoreCard store={store} />
               </motion.div>

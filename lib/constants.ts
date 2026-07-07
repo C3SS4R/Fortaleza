@@ -6,12 +6,12 @@ export const SITE_CONFIG = {
   shortName: 'Fortaleza',
   tagline: 'Onde as compras encontram o oceano',
   description:
-    'Centro comercial conceptual na Baía de Luanda: mais de 150 lojas, gastronomia e lazer com vista panorâmica para o Atlântico. Projeto de portfólio, sem afiliação oficial.',
+    'Centro comercial na Baía de Luanda: mais de 150 lojas, gastronomia e lazer com vista panorâmica para o oceano Atlântico.',
   url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://shopping-fortaleza.example',
   foundedYear: 2013,
-  phone: '+244 923 000 000',
-  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP ?? '244923000000',
-  email: 'ola@shopping-fortaleza.example',
+  phone: '+244 945 334 434',
+  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP ?? '244945334434',
+  email: 'cesarelavoco360@gmail.com',
   address: 'Avenida 4 de Fevereiro, Baía de Luanda, Luanda, Angola',
   openingHours: 'Todos os dias · 09h00 – 22h00',
   mapsEmbed:
@@ -48,7 +48,6 @@ export const FOOTER_SERVICES: NavLink[] = [
 
 export const FOOTER_LEGAL: NavLink[] = [
   { label: 'Política de Privacidade', href: '/politica-de-privacidade' },
-  { label: 'Projeto conceptual', href: '/politica-de-privacidade#aviso' },
 ];
 
 export const STATS: Stat[] = [

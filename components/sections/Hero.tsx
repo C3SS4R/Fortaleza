@@ -1,9 +1,8 @@
 'use client';
 
 import { useRef } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion';
 import { FiArrowRight } from 'react-icons/fi';
 
 const fadeUp = (delay: number) => ({
@@ -14,6 +13,7 @@ const fadeUp = (delay: number) => ({
 
 export default function Hero() {
   const ref = useRef<HTMLElement>(null);
+  const reduce = useReducedMotion();
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end start'] });
   const seaY = useTransform(scrollYProgress, [0, 1], ['0%', '30%']);
   const textY = useTransform(scrollYProgress, [0, 1], ['0%', '-12%']);
@@ -23,16 +23,29 @@ export default function Hero() {
       ref={ref}
       className="relative flex h-[100svh] min-h-[640px] items-center justify-center overflow-hidden"
     >
-      {/* Camada-mar (parallax mais lento) */}
-      <motion.div style={{ y: seaY }} className="absolute inset-0">
-        <Image
-          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000&q=80"
-          alt="Vista sobre o oceano Atlântico a partir do Shopping Fortaleza"
-          fill
-          priority
-          sizes="100vw"
-          className="scale-110 object-cover brightness-[0.5]"
-        />
+      {/* Camada-mar: video do oceano em movimento (parallax mais lento).
+          Em reduced-motion mostra apenas o poster estatico. */}
+      <motion.div style={{ y: seaY }} className="absolute inset-0" aria-hidden>
+        {reduce ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src="/hero-ocean-poster.jpg"
+            alt=""
+            className="h-full w-full scale-110 object-cover brightness-[0.5]"
+          />
+        ) : (
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            poster="/hero-ocean-poster.jpg"
+            className="h-full w-full scale-110 object-cover brightness-[0.5]"
+          >
+            <source src="/hero-ocean.mp4" type="video/mp4" />
+          </video>
+        )}
       </motion.div>
 
       {/* Gradiente-assinatura horizonte: ceu (topo) -> mar profundo (fundo) */}

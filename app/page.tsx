@@ -14,6 +14,7 @@ export default function HomePage() {
     <>
       <Hero />
       <Stats />
+      <WaveDivider color="#0C6E88" className="mt-16" />
       <About />
       <WaveDivider color="#04202D" />
       <Amenities />
