@@ -66,7 +66,7 @@ export default function Location({ showHeader = true }: { showHeader?: boolean }
                 </span>
                 <div>
                   <p className="text-sm font-bold text-foam">Shopping Fortaleza</p>
-                  <p className="text-[0.7rem] text-mist">Baía de Luanda · Marginal</p>
+                  <p className="text-[0.7rem] text-mist">Av. 4 de Fevereiro · Luanda</p>
                 </div>
               </div>
             </div>

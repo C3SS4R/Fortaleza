@@ -12,11 +12,11 @@ export const SITE_CONFIG = {
   phone: '+244 945 334 434',
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP ?? '244945334434',
   email: 'cesarelavoco360@gmail.com',
-  address: 'Avenida 4 de Fevereiro, Baía de Luanda, Luanda, Angola',
+  address: 'Av. 4 de Fevereiro, S/N, Luanda, Angola',
   openingHours: 'Todos os dias · 09h00 – 22h00',
   mapsEmbed:
     process.env.NEXT_PUBLIC_GOOGLE_MAPS_EMBED ??
-    'https://www.google.com/maps?q=Ba%C3%ADa%20de%20Luanda%2C%20Luanda%2C%20Angola&output=embed',
+    'https://www.google.com/maps?q=Shopping%20Fortaleza%2C%20Av.%204%20de%20Fevereiro%2C%20Luanda&output=embed',
   social: {
     instagram: 'https://instagram.com',
     facebook: 'https://facebook.com',
