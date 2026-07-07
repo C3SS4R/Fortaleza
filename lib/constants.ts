@@ -7,7 +7,7 @@ export const SITE_CONFIG = {
   tagline: 'O Atlântico à sua porta',
   description:
     'Na Baía de Luanda, mais de 150 lojas, gastronomia e lazer de frente para o oceano Atlântico. Um dia inteiro à beira-mar, num só lugar.',
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://shopping-fortaleza.example',
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://shoppingfortaleza.vercel.app',
   foundedYear: 2013,
   phone: '+244 945 334 434',
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP ?? '244945334434',
