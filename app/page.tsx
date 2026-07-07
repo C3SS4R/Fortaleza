@@ -18,9 +18,11 @@ export default function HomePage() {
       <About />
       <WaveDivider color="#04202D" />
       <Amenities />
+      <WaveDivider color="#062A3B" />
       <Stores preview />
       <WaveDivider color="#04202D" />
       <Events />
+      <WaveDivider color="#062A3B" />
       <Testimonials />
       <WaveDivider color="#04202D" />
       <Location />

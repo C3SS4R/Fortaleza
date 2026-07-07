@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import PageHero from '@/components/ui/PageHero';
 import Events from '@/components/sections/Events';
 import Newsletter from '@/components/sections/Newsletter';
+import WaveDivider from '@/components/ui/WaveDivider';
 
 export const metadata: Metadata = {
   title: 'Eventos',
@@ -20,6 +21,7 @@ export default function EventosPage() {
         highlight="promoções"
         breadcrumbLabel="Eventos"
       />
+      <WaveDivider color="#0C6E88" />
       <Events showHeader={false} />
       <Newsletter />
     </>

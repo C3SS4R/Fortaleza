@@ -15,7 +15,7 @@ const schema = z.object({
 type FormValues = z.infer<typeof schema>;
 
 const inputClasses =
-  'w-full rounded-xl border border-white/15 bg-white/5 px-5 py-3.5 text-sm text-foam placeholder:text-mist focus:border-lagoon focus:outline-none';
+  'w-full rounded-2xl border border-white/15 bg-white/5 px-5 py-3.5 text-sm text-foam placeholder:text-mist focus:border-lagoon focus:outline-none';
 const labelClasses = 'mb-2 block text-xs uppercase tracking-widest2 text-mist';
 
 const subjects = [
@@ -55,7 +55,7 @@ export default function ContactForm() {
 
   if (status === 'success') {
     return (
-      <div className="glass p-10 text-center">
+      <div className="liquid-glass rounded-3xl p-10 text-center">
         <p className="text-sm text-lagoon">
           Obrigado pelo seu contacto. A nossa equipa responderá em breve.
         </p>
@@ -64,7 +64,11 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} noValidate className="glass space-y-5 p-6 md:p-8">
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      noValidate
+      className="liquid-glass space-y-5 rounded-3xl p-6 md:p-8"
+    >
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
           <label htmlFor="name" className={labelClasses}>

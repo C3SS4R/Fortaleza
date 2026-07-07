@@ -77,7 +77,7 @@ export default function Location({ showHeader = true }: { showHeader?: boolean }
               const Icon = block.icon;
               return (
                 <Reveal key={block.title} delay={i * 0.1} className="h-full">
-                  <div className="glass flex h-full flex-col rounded-2xl p-6">
+                  <div className="liquid-glass flex h-full flex-col rounded-2xl p-6">
                     <Icon className="mb-4 text-2xl text-lagoon" />
                     <h3 className="font-display text-base font-bold uppercase tracking-wide text-foam">
                       {block.title}

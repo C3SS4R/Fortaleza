@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import PageHero from '@/components/ui/PageHero';
 import Stores from '@/components/sections/Stores';
+import WaveDivider from '@/components/ui/WaveDivider';
 
 export const metadata: Metadata = {
   title: 'Lojas & Marcas',
@@ -19,6 +20,7 @@ export default function LojasPage() {
         highlight="lojas"
         breadcrumbLabel="Lojas"
       />
+      <WaveDivider color="#0C6E88" />
       <Stores />
     </>
   );

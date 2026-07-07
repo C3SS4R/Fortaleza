@@ -23,6 +23,7 @@ export default function SobrePage() {
         highlight="história"
         breadcrumbLabel="Sobre"
       />
+      <WaveDivider color="#0C6E88" />
       <About />
       <WaveDivider color="#04202D" />
       <Amenities />

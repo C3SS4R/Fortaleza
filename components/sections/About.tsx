@@ -27,7 +27,7 @@ export default function About() {
           </motion.div>
           <div className="absolute inset-0 bg-gradient-to-t from-abyss/50 to-transparent" />
           {/* Selo "Desde" */}
-          <div className="glass absolute bottom-5 left-5 px-5 py-4">
+          <div className="liquid-glass absolute bottom-5 left-5 rounded-2xl px-5 py-4">
             <p className="text-[0.65rem] uppercase tracking-widest2 text-lagoon">Desde</p>
             <p className="font-display text-3xl font-black text-foam [font-stretch:112%]">
               {SITE_CONFIG.foundedYear}

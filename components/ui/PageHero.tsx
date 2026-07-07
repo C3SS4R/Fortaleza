@@ -1,8 +1,12 @@
+'use client';
+
 import Image from 'next/image';
+import { motion, useReducedMotion } from 'framer-motion';
 import Reveal from '@/components/ui/Reveal';
 import Breadcrumb from '@/components/ui/Breadcrumb';
 
 interface PageHeroProps {
+  /** Imagem propria de cada pagina — animada (Ken Burns) para dar vida unica. */
   image: string;
   label: string;
   title: string;
@@ -17,16 +21,32 @@ export default function PageHero({
   highlight,
   breadcrumbLabel,
 }: PageHeroProps) {
+  const reduce = useReducedMotion();
+
   return (
     <section className="relative flex h-[60vh] min-h-[420px] items-end overflow-hidden">
-      <Image
-        src={image}
-        alt=""
-        fill
-        priority
-        sizes="100vw"
-        className="scale-105 object-cover brightness-[0.4]"
-      />
+      {/* Ken Burns: zoom + deriva lentos e continuos sobre a imagem da propria
+          pagina — cada hero ganha vida sem perder a sua identidade. */}
+      <motion.div
+        className="absolute inset-0"
+        initial={{ scale: 1.05, x: '0%', y: '0%' }}
+        animate={reduce ? { scale: 1.05 } : { scale: 1.16, x: '-2.5%', y: '2%' }}
+        transition={
+          reduce
+            ? undefined
+            : { duration: 20, ease: 'easeInOut', repeat: Infinity, repeatType: 'reverse' }
+        }
+      >
+        <Image
+          src={image}
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover brightness-[0.4]"
+        />
+      </motion.div>
+
       <div className="absolute inset-0 bg-gradient-to-t from-abyss via-abyss/60 to-abyss/20" />
       <div className="relative z-10 mx-auto w-full max-w-content px-6 pb-14 lg:px-12">
         <Reveal>

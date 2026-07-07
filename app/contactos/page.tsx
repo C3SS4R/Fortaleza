@@ -5,6 +5,7 @@ import PageHero from '@/components/ui/PageHero';
 import ContactForm from '@/components/sections/ContactForm';
 import Location from '@/components/sections/Location';
 import Reveal from '@/components/ui/Reveal';
+import WaveDivider from '@/components/ui/WaveDivider';
 import { SITE_CONFIG } from '@/lib/constants';
 
 export const metadata: Metadata = {
@@ -26,6 +27,7 @@ export default function ContactosPage() {
         highlight="connosco"
         breadcrumbLabel="Contactos"
       />
+      <WaveDivider color="#0C6E88" />
 
       <section className="bg-abyss px-6 py-24 lg:px-12 lg:py-32">
         <div className="mx-auto grid max-w-content gap-10 lg:grid-cols-[1.1fr_0.9fr]">
@@ -46,7 +48,7 @@ export default function ContactosPage() {
           </div>
 
           <Reveal delay={0.2} variant="scale">
-            <div className="glass flex h-full flex-col gap-6 p-8">
+            <div className="liquid-glass flex h-full flex-col gap-6 rounded-3xl p-8">
               <h3 className="font-display text-lg font-bold text-foam">Contactos diretos</h3>
               <a
                 href={`tel:${SITE_CONFIG.phone.replace(/\s/g, '')}`}
