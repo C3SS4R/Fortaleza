@@ -85,8 +85,8 @@ export default function Hero() {
           {...fadeUp(2.1)}
           className="mx-auto mt-6 max-w-md text-base font-light tracking-wide text-mist sm:text-lg"
         >
-          Compras <span className="text-sand">·</span> Lazer{' '}
-          <span className="text-sand">·</span> Oceano
+          Mais de 150 lojas, gastronomia e lazer{' '}
+          <span className="text-sand">·</span> de frente para o Atlântico
         </motion.p>
 
         <motion.div
@@ -94,11 +94,11 @@ export default function Hero() {
           className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
         >
           <Link href="/lojas" className="cta-primary">
-            Explorar Lojas
+            Explorar as lojas
             <FiArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
           </Link>
           <Link href="/eventos" className="cta-outline">
-            Ver Eventos
+            Ver a agenda
           </Link>
         </motion.div>
       </motion.div>

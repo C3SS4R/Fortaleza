@@ -44,16 +44,16 @@ export default function About() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-6 text-base leading-relaxed text-mist">
-              O Shopping Fortaleza nasceu na Marginal de Luanda com uma ideia simples: reunir num só
-              lugar as compras, a boa mesa e o lazer — sempre com o oceano à vista. Três pisos de
-              lojas e marcas, esplanadas debruçadas sobre a baía e um terraço panorâmico onde o
+              O Shopping Fortaleza nasceu na Marginal de Luanda com uma ideia simples: reunir as
+              compras, a boa mesa e o lazer num só lugar — sempre com o oceano à vista. São três
+              pisos de lojas e marcas, esplanadas debruçadas sobre a baía e um terraço onde o
               pôr-do-sol é o espetáculo da casa.
             </p>
           </Reveal>
           <Reveal delay={0.2}>
             <p className="mt-4 text-base leading-relaxed text-mist">
-              Mais do que um centro comercial, é um ponto de encontro da cidade — para famílias,
-              amigos e para quem simplesmente quer ver o mar.
+              Mais do que um centro comercial, é o ponto de encontro da cidade — para famílias,
+              para amigos, e para quem só quer ver o mar.
             </p>
           </Reveal>
           <Reveal delay={0.3}>

@@ -49,7 +49,7 @@ export default function Footer() {
               Fortaleza
             </span>
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-mist">
-              {SITE_CONFIG.tagline}. Na Baía de Luanda, de frente para o Atlântico.
+              {SITE_CONFIG.tagline}. Na Marginal da Baía de Luanda, onde a cidade encontra o mar.
             </p>
             <div className="mt-6 flex gap-3">
               {socials.map(({ Icon, href }, i) => (

@@ -38,8 +38,8 @@ export default function ContactosPage() {
                 Como podemos <span>ajudar?</span>
               </h2>
               <p className="mt-5 max-w-md text-sm leading-relaxed text-mist">
-                Dúvidas sobre lojas, eventos ou espaços comerciais? Preencha o formulário e a nossa
-                equipa responde com a maior brevidade.
+                Dúvidas sobre lojas, eventos ou espaços comerciais? Escreva-nos — respondemos com a
+                maior brevidade.
               </p>
             </Reveal>
             <Reveal delay={0.1} className="mt-8">

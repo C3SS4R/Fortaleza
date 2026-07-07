@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/og';
 
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
-export const alt = 'Shopping Fortaleza — Onde as compras encontram o oceano';
+export const alt = 'Shopping Fortaleza — O Atlântico à sua porta';
 
 // Imagem de partilha (Open Graph / Twitter): wordmark sobre o mar profundo
 // com a linha do horizonte — a assinatura visual do site.
@@ -38,7 +38,7 @@ export default function OpengraphImage() {
           SHOPPING FORTALEZA
         </div>
         <div style={{ fontSize: 34, color: '#9DB3BC', marginTop: 28 }}>
-          Onde as compras encontram o oceano
+          O Atlântico à sua porta
         </div>
         <div
           style={{

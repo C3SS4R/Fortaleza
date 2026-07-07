@@ -16,8 +16,8 @@ export default function LojasPage() {
       <PageHero
         image="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=2000&q=80"
         label="Lojas & Marcas"
-        title="Diretório de"
-        highlight="lojas"
+        title="As marcas da"
+        highlight="Fortaleza"
         breadcrumbLabel="Lojas"
       />
       <WaveDivider color="#0C6E88" />

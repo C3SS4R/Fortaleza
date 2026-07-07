@@ -4,9 +4,9 @@ import { Amenity, EventItem, NavLink, Stat, Store, Testimonial } from '@/types';
 export const SITE_CONFIG = {
   name: 'Shopping Fortaleza',
   shortName: 'Fortaleza',
-  tagline: 'Onde as compras encontram o oceano',
+  tagline: 'O Atlântico à sua porta',
   description:
-    'Centro comercial na Baía de Luanda: mais de 150 lojas, gastronomia e lazer com vista panorâmica para o oceano Atlântico.',
+    'Na Baía de Luanda, mais de 150 lojas, gastronomia e lazer de frente para o oceano Atlântico. Um dia inteiro à beira-mar, num só lugar.',
   url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://shopping-fortaleza.example',
   foundedYear: 2013,
   phone: '+244 945 334 434',
@@ -63,7 +63,7 @@ export const AMENITIES: Amenity[] = [
     icon: TbBeach,
     title: 'Vista Panorâmica',
     description:
-      'Terraço e praça superior debruçados sobre a Baía de Luanda — o pôr-do-sol sobre o Atlântico como pano de fundo das suas compras.',
+      'Um terraço debruçado sobre a Baía de Luanda, onde o pôr-do-sol sobre o Atlântico acompanha cada visita.',
     image:
       'https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1200&q=80',
   },
@@ -72,7 +72,7 @@ export const AMENITIES: Amenity[] = [
     icon: TbToolsKitchen2,
     title: 'Praça de Alimentação',
     description:
-      'Mais de 20 espaços de restauração, do café rápido à cozinha de autor, com esplanadas viradas para o mar.',
+      'Mais de 20 restaurantes, do café rápido à cozinha de autor — todos com esplanadas viradas para o mar.',
     image:
       'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80',
   },
@@ -81,7 +81,7 @@ export const AMENITIES: Amenity[] = [
     icon: TbParking,
     title: 'Estacionamento',
     description:
-      'Mil lugares cobertos com acesso direto a cada piso e entrada facilitada pela Marginal.',
+      'Mil lugares cobertos, com acesso direto a cada piso e entrada pela Marginal. Chegar nunca foi tão simples.',
     image:
       'https://images.unsplash.com/photo-1573348722427-f1d6819fdf98?auto=format&fit=crop&w=1200&q=80',
   },
@@ -90,7 +90,7 @@ export const AMENITIES: Amenity[] = [
     icon: TbShieldCheck,
     title: 'Segurança 24h',
     description:
-      'Vigilância permanente, videomonitorização e equipas de apoio ao visitante em todos os pisos.',
+      'Vigilância permanente, videomonitorização e equipas de apoio em todos os pisos — a qualquer hora do dia.',
     image:
       'https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=1200&q=80',
   },
@@ -176,7 +176,7 @@ export const STORES: Store[] = [
     floor: 'Piso 2',
     image:
       'https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1000&q=80',
-    description: 'Cabeleireiro, estética e bem-estar.',
+    description: 'Cabeleireiro, estética e um ritual de bem-estar.',
   },
   {
     slug: 'banco-marginal',
@@ -225,7 +225,7 @@ export const EVENTS: EventItem[] = [
     dateLabel: '10 Set 2026',
     image:
       'https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=1200&q=80',
-    description: 'Desfiles de designers angolanos e lançamentos das marcas do shopping.',
+    description: 'Desfiles de designers angolanos e as novas coleções das marcas da Fortaleza.',
     category: 'Moda',
   },
   {

@@ -6,7 +6,7 @@ import { SITE_CONFIG } from '@/lib/constants';
 
 export default function WhatsAppButton() {
   const href = `https://wa.me/${SITE_CONFIG.whatsapp}?text=${encodeURIComponent(
-    'Olá! Gostava de saber mais sobre o Shopping Fortaleza.',
+    'Olá, gostava de saber mais sobre o Shopping Fortaleza.',
   )}`;
 
   return (

@@ -17,8 +17,8 @@ export default function EventosPage() {
       <PageHero
         image="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=2000&q=80"
         label="Agenda"
-        title="Eventos &"
-        highlight="promoções"
+        title="A agenda da"
+        highlight="baía"
         breadcrumbLabel="Eventos"
       />
       <WaveDivider color="#0C6E88" />

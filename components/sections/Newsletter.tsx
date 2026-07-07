@@ -34,15 +34,15 @@ export default function Newsletter() {
             <div className="horizon-line absolute inset-x-0 top-0 opacity-50" />
             <span className="section-label justify-center">Newsletter</span>
             <h2 className="section-title mx-auto max-w-xl">
-              Receba a agenda e as <span>novidades</span>
+              Nunca perca a agenda da <span>baía</span>
             </h2>
             <p className="mx-auto mt-4 max-w-md text-sm text-mist">
-              Eventos, aberturas de lojas e promoções — direto no seu email, sem spam.
+              Eventos, novas lojas e promoções — direto no seu email, sem spam.
             </p>
 
             {submitted ? (
               <p className="mx-auto mt-8 max-w-md text-sm text-lagoon">
-                Subscrição registada. Até breve na Fortaleza!
+                Subscrição registada. Até breve na Fortaleza.
               </p>
             ) : (
               <form
