@@ -11,7 +11,7 @@ export const SITE_CONFIG = {
   foundedYear: 2013,
   phone: '+244 945 334 434',
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP ?? '244945334434',
-  email: 'comercial@fortalezashopping.co.ao',
+  email: 'cesarelavoco360@gmail.com',
   address: 'Av. 4 de Fevereiro, S/N, Luanda, Angola',
   openingHours: 'Todos os dias · 09h00 – 22h00',
   mapsEmbed:
