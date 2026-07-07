@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-abyss text-foam antialiased;
+    font-feature-settings: 'tnum' 0;
+  }
+
+  ::selection {
+    @apply bg-coral text-abyss;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-abyss-deep;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-ocean;
+  }
+
+  :focus-visible {
+    outline: 2px solid theme('colors.lagoon.DEFAULT');
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  /* Eyebrow / rotulo de seccao */
+  .section-label {
+    @apply mb-4 block text-[0.7rem] font-semibold uppercase tracking-widest2 text-lagoon;
+  }
+
+  /* Titulo de seccao (display), palavra de realce dentro de <span> */
+  .section-title {
+    @apply font-display text-4xl font-extrabold leading-[1.05] tracking-tight md:text-5xl;
+    font-stretch: 112%;
+  }
+  .section-title span {
+    @apply text-coral;
+  }
+
+  /* Wordmark monumental do hero — Archivo eixo de largura no maximo */
+  .wordmark {
+    @apply font-display font-black uppercase leading-[0.86];
+    font-stretch: 125%;
+    letter-spacing: -0.02em;
+  }
+
+  /* Vidro sobre superficies escuras/imagens */
+  .glass {
+    @apply border border-white/15 bg-white/[0.06] backdrop-blur-[16px];
+    background-image: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.02)
+    );
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
+    backdrop-filter: blur(16px) saturate(140%);
+  }
+
+  /* Vidro sobre superficies claras (foam) */
+  .glass-light {
+    @apply border border-abyss/10 bg-white/60 backdrop-blur-[16px];
+    -webkit-backdrop-filter: blur(16px) saturate(120%);
+    backdrop-filter: blur(16px) saturate(120%);
+  }
+
+  /* CTA primario: gradiente mar com texto espuma */
+  .cta-primary {
+    @apply inline-flex items-center gap-3 rounded-none bg-gradient-to-r from-ocean to-abyss px-8 py-3.5 text-xs font-semibold uppercase tracking-widest2 text-foam transition-all duration-300 hover:from-ocean-light hover:to-ocean;
+  }
+
+  /* CTA secundario: contorno coral */
+  .cta-outline {
+    @apply inline-flex items-center gap-3 border border-coral px-8 py-3.5 text-xs font-semibold uppercase tracking-widest2 text-coral transition-all duration-300 hover:bg-coral hover:text-abyss;
+  }
+
+  /* Linha do horizonte (elemento-assinatura): gradiente ocean -> sand */
+  .horizon-line {
+    @apply h-px w-full;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      theme('colors.ocean.light'),
+      theme('colors.sand.DEFAULT'),
+      transparent
+    );
+  }
+}
+
+/* Acessibilidade: desligar animacoes nao-essenciais */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
